@@ -1,0 +1,13 @@
+[
+  {
+    "outputFile": "css/styles.css",
+    "inputFile": "scss/styles.scss",
+    "sourceMap": false
+  },
+
+    {
+    "outputFile": "css/homepage.css",
+    "inputFile": "scss/homepage.scss",
+    "sourceMap": false
+  }
+]

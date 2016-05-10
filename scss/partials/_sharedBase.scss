@@ -1,0 +1,267 @@
+﻿@import "mixins";
+@import "../themes/darkGreenTheme";
+
+body {
+    margin: 0 !important;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: $medium-font;
+    font-family: $base-font-family;
+    font-weight: $regular;
+    background: $background-color;
+}
+
+#container {
+    @media screen and (max-width: $break-medium) {
+        &.is-hidden {
+            margin-left: 245px;
+            @include transition(margin-left 0.5s ease-out);
+        }
+    }
+}
+
+/*Header is relative so z-index: 1 guarantees always displayed on top*/
+header {
+    background-color: #0E532D;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    height: 3em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    @media screen and (min-width: $break-medium) {
+        @include linear-gradient($largeResHead-dark, $largeResHead-light);
+        position: relative;
+        height: 5.5em;
+        padding: 0;
+    }
+
+    img {
+        display: none;
+    }
+
+    span {
+        font-style: italic;
+        white-space: nowrap;
+    }
+}
+
+.header-logo {
+    a {
+        position: absolute;
+        top: 17px;
+        left: 65px;
+        color: #FFF;
+        font-size: 1.15em;
+        text-decoration: none;
+        display: inline-block;
+    }
+}
+
+#content {
+    padding: 1em;
+    min-width: 300px;
+    position: relative;
+    width: auto;
+    min-height: 600px;
+    margin: 0 auto;
+    @include box-sizing(border-box);
+
+    @media screen and (min-width: $break-medium) {
+        padding-top: 1em;
+        max-width: 800px;
+        min-height: 775px;
+    }
+
+    @media screen and (min-width: $break-large) {
+        max-width: 1024px;
+    }
+}
+
+
+/*h1 {
+    color: $h1-text;
+    left: 3.5em;
+    top: .25em;
+    position: absolute;
+    white-space: nowrap;
+    font-weight: $bold;
+    line-height: 2.5em;
+    font-size: $medium-font;
+    font-family: $cursive-font-family;
+
+    @media screen and (min-width: $break-small) {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    @media screen and (min-width: $break-medium) {
+        font-size: $large-font;
+        left: .5em;
+        top: .5em;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: $h1-text;
+        }
+    }
+}*/
+
+
+h2 {
+    font-family: 'Mrs Eaves', 'Hoefler Text', Georgia, serif;
+    margin: 1.5em 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: $paragraph-text;
+
+    @media screen and (min-width: $break-medium) {
+        text-align: left;
+        margin: 1em 0;
+        font-size: 2.6em;
+    }
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: $regular;
+    color: $paragraph-text;
+    margin-bottom: .5em;
+}
+
+p {
+    margin: 1em 0 .5em;
+    line-height: 1.5em;
+    color: $paragraph-text;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    min-width: 270px !important;
+    min-height: 500px;
+
+    .place-card {
+        display: none !important;
+    }
+}
+
+.gm-style .place-card div {
+    display: none;
+}
+
+footer {
+    @include linear-gradient($footerBackground-light, $footerBackground-dark);
+    position: relative;
+    border-top: 1px solid $footerBorder-light;
+    margin-top: 3em;
+    min-width: 315px;
+    clear: both;
+
+    @media screen and (min-width: $break-large) {
+        min-height: initial;
+    }
+
+
+    ul.footer-menu {
+        width: 90%;
+        margin: 1em auto 0;
+
+        @media screen and (min-width: $break-medium) {
+            width: 70%;
+        }
+
+        @media screen and (min-width: $break-large) {
+            max-width: 660px;
+        }
+
+        li {
+            margin: 1em 0;
+            padding: 0.5em 0;
+            display: inline-block;
+            width: 32%;
+            text-align: center;
+            border-right: 1px solid $footerNavLink-border;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            a {
+                color: $footerTextLinks;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+
+    small {
+        font-weight: $regular;
+        font-size: .65em;
+        display: block;
+        margin: 3em auto 0;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    ul.course-info {
+        text-align: center;
+        font-weight: $regular;
+        line-height: 1.25em;
+        margin-top: 1em;
+
+        li {
+            color: $paragraph-text;
+            font-size: .85em;
+
+            &:last-child {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .footer-to-light {
+        background-color: $backToTop;
+        @include border-radius(.75em);
+        color: $backToTop-text;
+        display: block;
+        padding: .75em 0;
+        margin: 2em auto 0;
+        width: 7em;
+        text-align: center;
+        font-size: 0.85em;
+
+        @media screen and (min-width: $break-medium) {
+            display: none;
+        }
+    }
+}
+/* user messaging */
+
+.message {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.success {
+    @extend .message;
+    border-color: green;
+}
+
+.error {
+    @extend .message;
+    border-color: red;
+}
+
+.warning {
+    @extend .message;
+    border-color: yellow;
+}

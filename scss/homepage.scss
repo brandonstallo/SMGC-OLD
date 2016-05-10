@@ -1,0 +1,56 @@
+﻿@import "partials/mixins";
+@import "partials/rotator";
+
+
+.bx-wrapper {
+	.bx-viewport {
+		@media screen and (min-width: $break-small) {
+			height:300px !important;
+		}
+		@media screen and (min-width: $break-medium) {
+			height:400px !important;
+		}
+		@media screen and (min-width: $break-large) {
+			height:500px !important;
+		}
+	}
+}
+
+p {
+
+	@media screen and (min-width: $break-medium) {
+		width:48%;
+		float:left;
+		margin-right:4%;
+	}
+		
+	@media screen and (min-width: $break-large) {
+		width:50.5%;	
+	}
+}
+
+
+aside.latest-news {
+
+	div {
+		width:100% !important;
+		@media screen and (min-width: $break-medium) {
+			width:48% !important;
+		}
+		@media screen and (min-width: $break-large) {
+			width:45% !important;
+		}
+
+	}
+	
+	span {
+		width:100% !important;
+	}
+	
+
+	iframe {
+		width:100% !important;
+		position:relative !important;
+	}
+
+}

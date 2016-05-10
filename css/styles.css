@@ -1,0 +1,393 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Header */
+/* Navigation */
+/* Body */
+/* Rotator */
+/* Footer */
+body {
+  margin: 0 !important;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 1em;
+  font-family: "Trade Gothic", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  background: #F8F8F8; }
+
+@media screen and (max-width: 768px) {
+  #container.is-hidden {
+    margin-left: 245px;
+    -webkit-transition: margin-left 0.5s ease-out;
+    -moz-transition: margin-left 0.5s ease-out;
+    -o-transition: margin-left 0.5s ease-out;
+    transition: margin-left 0.5s ease-out; } }
+
+/*Header is relative so z-index: 1 guarantees always displayed on top*/
+header {
+  background-color: #0E532D;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  z-index: 9;
+  height: 3em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media screen and (min-width: 768px) {
+    header {
+      background: #143600;
+      /* Fallback Color */
+      background: -webkit-gradient(linear, left top, left bottom, from(#265809), to(#143600));
+      /* Saf4+, Chrome */
+      background: -webkit-linear-gradient(top, #265809, #143600);
+      /* Chrome 10+, Saf5.1+, iOS 5+ */
+      background: -moz-linear-gradient(top, #265809, #143600);
+      /* FF3.6 */
+      background: -ms-linear-gradient(top, #265809, #143600);
+      /* IE10 */
+      background: -o-linear-gradient(top, #265809, #143600);
+      /* Opera 11.10+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#265809', EndColorStr='#143600');
+      position: relative;
+      height: 5.5em;
+      padding: 0; } }
+  header img {
+    display: none; }
+  header span {
+    font-style: italic;
+    white-space: nowrap; }
+
+.header-logo a {
+  position: absolute;
+  top: 17px;
+  left: 65px;
+  color: #FFF;
+  font-size: 1.15em;
+  text-decoration: none;
+  display: inline-block; }
+
+#content {
+  padding: 1em;
+  min-width: 300px;
+  position: relative;
+  width: auto;
+  min-height: 600px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media screen and (min-width: 768px) {
+    #content {
+      padding-top: 1em;
+      max-width: 800px;
+      min-height: 775px; } }
+  @media screen and (min-width: 1200px) {
+    #content {
+      max-width: 1024px; } }
+
+/*h1 {
+    color: $h1-text;
+    left: 3.5em;
+    top: .25em;
+    position: absolute;
+    white-space: nowrap;
+    font-weight: $bold;
+    line-height: 2.5em;
+    font-size: $medium-font;
+    font-family: $cursive-font-family;
+
+    @media screen and (min-width: $break-small) {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    @media screen and (min-width: $break-medium) {
+        font-size: $large-font;
+        left: .5em;
+        top: .5em;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: $h1-text;
+        }
+    }
+}*/
+h2 {
+  font-family: 'Mrs Eaves', 'Hoefler Text', Georgia, serif;
+  margin: 1.5em 0;
+  text-align: center;
+  font-size: 1.5em;
+  color: #383A42; }
+  @media screen and (min-width: 768px) {
+    h2 {
+      text-align: left;
+      margin: 1em 0;
+      font-size: 2.6em; } }
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #383A42;
+  margin-bottom: .5em; }
+
+p {
+  margin: 1em 0 .5em;
+  line-height: 1.5em;
+  color: #383A42; }
+
+iframe {
+  width: 100%;
+  height: 100%;
+  min-width: 270px !important;
+  min-height: 500px; }
+  iframe .place-card {
+    display: none !important; }
+
+.gm-style .place-card div {
+  display: none; }
+
+footer {
+  background: #E9E9E9;
+  /* Fallback Color */
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#E9E9E9));
+  /* Saf4+, Chrome */
+  background: -webkit-linear-gradient(top, #F8F8F8, #E9E9E9);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background: -moz-linear-gradient(top, #F8F8F8, #E9E9E9);
+  /* FF3.6 */
+  background: -ms-linear-gradient(top, #F8F8F8, #E9E9E9);
+  /* IE10 */
+  background: -o-linear-gradient(top, #F8F8F8, #E9E9E9);
+  /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#F8F8F8', EndColorStr='#E9E9E9');
+  position: relative;
+  border-top: 1px solid #CECECE;
+  margin-top: 3em;
+  min-width: 315px;
+  clear: both; }
+  @media screen and (min-width: 1200px) {
+    footer {
+      min-height: initial; } }
+  footer ul.footer-menu {
+    width: 90%;
+    margin: 1em auto 0; }
+    @media screen and (min-width: 768px) {
+      footer ul.footer-menu {
+        width: 70%; } }
+    @media screen and (min-width: 1200px) {
+      footer ul.footer-menu {
+        max-width: 660px; } }
+    footer ul.footer-menu li {
+      margin: 1em 0;
+      padding: 0.5em 0;
+      display: inline-block;
+      width: 32%;
+      text-align: center;
+      border-right: 1px solid #CECECE; }
+      footer ul.footer-menu li:last-child {
+        border-right: none; }
+      footer ul.footer-menu li a {
+        color: #143600;
+        font-weight: bold;
+        text-decoration: none; }
+  footer small {
+    font-weight: 400;
+    font-size: .65em;
+    display: block;
+    margin: 3em auto 0;
+    text-align: center;
+    padding-bottom: 1em; }
+  footer ul.course-info {
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.25em;
+    margin-top: 1em; }
+    footer ul.course-info li {
+      color: #383A42;
+      font-size: .85em; }
+      footer ul.course-info li:last-child {
+        margin-top: 1em; }
+  footer .footer-to-light {
+    background-color: #2F5E14;
+    border-radius: 0.75em;
+    color: #FFF;
+    display: block;
+    padding: .75em 0;
+    margin: 2em auto 0;
+    width: 7em;
+    text-align: center;
+    font-size: 0.85em; }
+    @media screen and (min-width: 768px) {
+      footer .footer-to-light {
+        display: none; } }
+
+/* user messaging */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+/* Header */
+/* Navigation */
+/* Body */
+/* Rotator */
+/* Footer */
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    position: relative;
+    padding-left: 1.25em;
+    background: #FFF;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 2em;
+    color: #427B20;
+    width: 1em;
+    font-family: Verdana, Arial, Helvetica, sans-serif; }
+    .mobile-menu:before {
+      content: "";
+      position: absolute;
+      left: 0.25em;
+      top: 0.35em;
+      width: 1.75em;
+      height: 0.25em;
+      background: #427B20;
+      box-shadow: 0 0.5em 0 0 #427B20, 0 1em 0 0 #427B20;
+      border-radius: 6px; } }
+
+/* The navigation container in the background */
+nav {
+  background: #292929;
+  /* Fallback Color */
+  background: -webkit-gradient(linear, left top, left bottom, from(#555), to(#292929));
+  /* Saf4+, Chrome */
+  background: -webkit-linear-gradient(top, #555, #292929);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background: -moz-linear-gradient(top, #555, #292929);
+  /* FF3.6 */
+  background: -ms-linear-gradient(top, #555, #292929);
+  /* IE10 */
+  background: -o-linear-gradient(top, #555, #292929);
+  /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#555', EndColorStr='#292929');
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 0;
+  width: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Verdana, Arial, Helvetica, sans-serif; }
+  @media screen and (min-width: 768px) {
+    nav {
+      background: #7C814B;
+      /* Fallback Color */
+      background: -webkit-gradient(linear, left top, left bottom, from(#D5D97B), to(#7C814B));
+      /* Saf4+, Chrome */
+      background: -webkit-linear-gradient(top, #D5D97B, #7C814B);
+      /* Chrome 10+, Saf5.1+, iOS 5+ */
+      background: -moz-linear-gradient(top, #D5D97B, #7C814B);
+      /* FF3.6 */
+      background: -ms-linear-gradient(top, #D5D97B, #7C814B);
+      /* IE10 */
+      background: -o-linear-gradient(top, #D5D97B, #7C814B);
+      /* Opera 11.10+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#D5D97B', EndColorStr='#7C814B');
+      position: relative;
+      width: 100%;
+      padding: 0 1em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; } }
+  nav li {
+    float: left;
+    width: 16.5%;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    white-space: nowrap; }
+    @media screen and (max-width: 768px) {
+      nav li {
+        position: relative;
+        border-bottom: 1px solid #1D241F;
+        text-align: left;
+        width: 100%; } }
+  nav li a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 1em; }
+    @media screen and (min-width: 768px) {
+      nav li a {
+        padding: .4em 0;
+        font-size: 1em; } }
+    @media screen and (min-width: 1200px) {
+      nav li a {
+        font-size: 1.3em; } }
+    @media screen and (min-width: 768px) {
+      nav li a:hover {
+        background-color: #DCDEC3;
+        color: #265809; } }
+  @media screen and (max-width: 768px) {
+    nav.is-open {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      width: 244px;
+      -webkit-transition: width 0.5s ease-out;
+      -moz-transition: width 0.5s ease-out;
+      -o-transition: width 0.5s ease-out;
+      transition: width 0.5s ease-out; } }
+
+/* The Layer that will be layed over the content so that the content is unclickable while menu is shown */
+@media screen and (max-width: 768px) {
+  nav.is-open + #contentLayer {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    background-color: #000;
+    opacity: .5; } }
+
